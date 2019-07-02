@@ -1,4 +1,4 @@
-package com.abhsy.aries.config;
+package com.abhsy.aries.intercept;
 
 import com.abhsy.aries.constant.AriesConstant;
 import com.abhsy.aries.intercept.HostnameInterceptor;
