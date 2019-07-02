@@ -1,6 +1,6 @@
 package com.abhsy.aries.zuul;
 
-import com.abhsy.aries.config.FeignInterceptorConfig;
+import com.abhsy.aries.intercept.FeignInterceptorConfig;
 import com.abhsy.aries.constant.AriesConstant;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
