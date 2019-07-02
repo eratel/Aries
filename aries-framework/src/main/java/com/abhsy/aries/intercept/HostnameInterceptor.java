@@ -1,5 +1,6 @@
 package com.abhsy.aries.intercept;
 
+import com.abhsy.aries.config.FeignInterceptorConfig;
 import com.abhsy.aries.constant.AriesConstant;
 import org.springframework.web.servlet.HandlerInterceptor;
 
