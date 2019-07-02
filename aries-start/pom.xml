@@ -13,9 +13,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.abhsy</groupId>
-            <artifactId>aries-framework</artifactId>
-            <version>1.0</version>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>aries-zuul</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>
