@@ -18,7 +18,7 @@ public class AriesExampleServerApplication {
     }
 
     @RequestMapping("test")
-    public String test(@RequestHeader(AriesConstant.TOKENHEADER)String name){
+    public String test(@RequestHeader(AriesConstant.STRATEGYVERSION)String name){
         System.out.println(name);
         return name;
     }

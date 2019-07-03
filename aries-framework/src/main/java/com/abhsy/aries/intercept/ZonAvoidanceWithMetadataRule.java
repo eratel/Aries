@@ -35,10 +35,10 @@ public class ZonAvoidanceWithMetadataRule extends ZoneAvoidanceRule {
             List<Server> defaultServers = new ArrayList<>();
             for (Server server : lb.getAllServers()) {
                 Map<String, String> map = serverIntrospector.getMetadata(server);
-                String CANARYVERSION = map.get(AriesConstant.CANARYVERSION);
-                if (CANARYVERSION != null && CANARYVERSION.equals(requestHostName)) {
+                String strategyVersion = map.get(AriesConstant.STRATEGYVERSION);
+                if (strategyVersion != null && strategyVersion.equals(requestHostName)) {
                     matchServers.add(server);
-                } else if (CANARYVERSION == null || CANARYVERSION.trim().isEmpty() || CANARYVERSION.equals(AriesConstant.DEFAULT)) {
+                } else if (strategyVersion == null || strategyVersion.trim().isEmpty() || strategyVersion.equals(AriesConstant.DEFAULT)) {
                     defaultServers.add(server);
                 }
             }

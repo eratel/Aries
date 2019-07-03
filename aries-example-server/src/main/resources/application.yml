@@ -1,4 +1,4 @@
 spring:
   profiles:
-    active: test1
-#    active: test2
+#    active: test1
+    active: test2

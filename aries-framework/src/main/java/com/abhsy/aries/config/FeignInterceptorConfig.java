@@ -19,7 +19,7 @@ public class FeignInterceptorConfig implements WebMvcConfigurer {
         return new RequestInterceptor() {
             @Override
             public void apply(RequestTemplate restTemplate) {
-                restTemplate.header(AriesConstant.TOKENHEADER, CONTEXT.get());
+                restTemplate.header(AriesConstant.STRATEGYVERSION, CONTEXT.get());
             }
         };
     }

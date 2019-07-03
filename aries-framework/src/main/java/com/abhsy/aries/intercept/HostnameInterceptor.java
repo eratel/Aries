@@ -12,7 +12,7 @@ public class HostnameInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //拦截请求
-        String hostname = request.getHeader(AriesConstant.TOKENHEADER);
+        String hostname = request.getHeader(AriesConstant.STRATEGYVERSION);
         if (hostname == null)
         {
             hostname = AriesConstant.ALLSERVER;

@@ -18,11 +18,11 @@ public class CanaryZuulFilter extends ZuulFilter {
 
     @Override
     public Object run() {
-        String canryVersion = RequestContext.getCurrentContext().getRequest().getHeader(AriesConstant.TOKENHEADER);
-        if (canryVersion == null) {
-            canryVersion = strategyVersion;
+        String strategyNowVersion = RequestContext.getCurrentContext().getRequest().getHeader(AriesConstant.STRATEGYVERSION);
+        if (strategyVersion == null) {
+            strategyVersion = strategyNowVersion;
         }
-        FeignInterceptorConfig.CONTEXT.set(canryVersion);
+        FeignInterceptorConfig.CONTEXT.set(strategyVersion);
         return null;
     }
 

@@ -8,7 +8,7 @@ public interface AriesConstant {
     String framworkName = "Aries";
 
     String ARIES_VERSION = "1.0.0";
-    String TOKENHEADER = "hostname";
+    String STRATEGYVERSION = "strategyVersion";
     String CONTEXTPATH = "/**";
 
     /**
@@ -16,5 +16,5 @@ public interface AriesConstant {
      */
     String ALLSERVER = "all";
     String DEFAULT = "default";
-    String CANARYVERSION = "canaryVersion";
+
 }

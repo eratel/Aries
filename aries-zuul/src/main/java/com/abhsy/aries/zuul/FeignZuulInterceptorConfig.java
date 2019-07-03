@@ -17,7 +17,7 @@ public class FeignZuulInterceptorConfig
 			@Override
 			public void apply(RequestTemplate restTemplate) 
 			{
-				restTemplate.header(AriesConstant.TOKENHEADER, FeignInterceptorConfig.CONTEXT.get());
+				restTemplate.header(AriesConstant.STRATEGYVERSION, FeignInterceptorConfig.CONTEXT.get());
 			}
 		};
 	}
