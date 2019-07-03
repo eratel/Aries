@@ -4,12 +4,8 @@ import com.abhsy.aries.config.FeignInterceptorConfiguration;
 import com.abhsy.aries.constant.AriesConstant;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
-import org.springframework.beans.factory.annotation.Value;
 
-public class CanaryZuulFilter extends ZuulFilter {
-
-    @Value("${eureka.metadataMap.strategyVersion:all}")
-    private String strategyVersion = null;
+public class StrategyZuulFilter extends ZuulFilter {
 
     @Override
     public boolean shouldFilter() {
@@ -19,10 +15,10 @@ public class CanaryZuulFilter extends ZuulFilter {
     @Override
     public Object run() {
         String strategyNowVersion = RequestContext.getCurrentContext().getRequest().getHeader(AriesConstant.STRATEGYVERSION);
-        if (strategyVersion == null) {
-            strategyVersion = strategyNowVersion;
+        if (strategyNowVersion == null) {
+            strategyNowVersion = AriesConstant.ALLSERVER;
         }
-        FeignInterceptorConfiguration.CONTEXT.set(strategyVersion);
+        FeignInterceptorConfiguration.CONTEXT.set(strategyNowVersion);
         return null;
     }
 

@@ -12,13 +12,13 @@ public class HostnameInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //拦截请求
-        String hostname = request.getHeader(AriesConstant.STRATEGYVERSION);
-        if (hostname == null)
+        String strategyVersion = request.getHeader(AriesConstant.STRATEGYVERSION);
+        if (strategyVersion == null)
         {
-            hostname = AriesConstant.ALLSERVER;
+            strategyVersion = AriesConstant.ALLSERVER;
         }
         //存放到localhost中
-        FeignInterceptorConfiguration.CONTEXT.set(hostname);
+        FeignInterceptorConfiguration.CONTEXT.set(strategyVersion);
         return true;
     }
 }

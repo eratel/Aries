@@ -16,8 +16,8 @@ public class FeignZuulInterceptorConfig {
 
 
     @Bean
-    public CanaryZuulFilter canaryZuulFilter() {
-        return new CanaryZuulFilter();
+    public StrategyZuulFilter canaryZuulFilter() {
+        return new StrategyZuulFilter();
     }
 
 }
