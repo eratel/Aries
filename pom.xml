@@ -10,8 +10,9 @@
     <modules>
         <module>aries-common</module>
 		<module>aries-framework</module>
-		<module>aries-start</module>
         <module>aries-zuul</module>
+        <module>aries-start-zuul</module>
+        <module>aries-start-server</module>
         <module>aries-example-eureka</module>
         <module>aries-example-server</module>
         <module>aries-example-zuul</module>

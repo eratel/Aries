@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>aries-start</artifactId>
+    <artifactId>aries-start-zuul</artifactId>
 
     <dependencies>
         <dependency>

@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>aries-start</artifactId>
+            <artifactId>aries-start-zuul</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
