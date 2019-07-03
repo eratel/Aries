@@ -1,31 +1,23 @@
 package com.abhsy.aries.zuul;
 
-import com.abhsy.aries.config.FeignInterceptorConfig;
-import com.abhsy.aries.constant.AriesConstant;
+import com.abhsy.aries.config.AriesRequestInterceptor;
 import feign.RequestInterceptor;
-import feign.RequestTemplate;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-public class FeignZuulInterceptorConfig
-{
-	@Bean
-	public RequestInterceptor headerInterceptor()
-	{
-		return new RequestInterceptor() 
-		{
-			@Override
-			public void apply(RequestTemplate restTemplate) 
-			{
-				restTemplate.header(AriesConstant.STRATEGYVERSION, FeignInterceptorConfig.CONTEXT.get());
-			}
-		};
-	}
+public class FeignZuulInterceptorConfig {
 
-	
-	@Bean  
-    public CanaryZuulFilter canaryZuulFilter() {  
-        return new CanaryZuulFilter();  
+
+    @Bean
+    @ConditionalOnBean(RequestInterceptor.class)
+    public RequestInterceptor headerInterceptor() {
+        return new AriesRequestInterceptor();
     }
-	
+
+
+    @Bean
+    public CanaryZuulFilter canaryZuulFilter() {
+        return new CanaryZuulFilter();
+    }
+
 }

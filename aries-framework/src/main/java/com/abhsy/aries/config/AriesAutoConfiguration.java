@@ -5,7 +5,7 @@ import com.abhsy.aries.constant.AriesConstant;
 import org.springframework.context.annotation.Import;
 
 @Import({FeignInterceptorConfig.class})
-public class EurekaAutoConfiguration {
+public class AriesAutoConfiguration {
     static {
         String logoShown = System.getProperty("aries.logo.shown", "true");
         if (Boolean.valueOf(logoShown)) {

@@ -16,10 +16,6 @@ public class ZonAvoidanceWithMetadataRule extends ZoneAvoidanceRule {
 
     private ServerIntrospector serverIntrospector;
 
-    public ServerIntrospector getServerIntrospector() {
-        return serverIntrospector;
-    }
-
     public void setServerIntrospector(ServerIntrospector serverIntrospector) {
         this.serverIntrospector = serverIntrospector;
     }

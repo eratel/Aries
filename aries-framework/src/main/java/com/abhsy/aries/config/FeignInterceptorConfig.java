@@ -6,7 +6,6 @@ import com.alibaba.ttl.TransmittableThreadLocal;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -16,12 +15,7 @@ public class FeignInterceptorConfig implements WebMvcConfigurer {
 
     @Bean
     public RequestInterceptor headerInterceptor() {
-        return new RequestInterceptor() {
-            @Override
-            public void apply(RequestTemplate restTemplate) {
-                restTemplate.header(AriesConstant.STRATEGYVERSION, CONTEXT.get());
-            }
-        };
+        return new AriesRequestInterceptor();
     }
 
 

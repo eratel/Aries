@@ -1,4 +1,4 @@
-package com.abhsy.aries.start;
+package com.abhsy.aries.config;
 
 import com.abhsy.aries.config.CanaryLoadBalanceConfig;
 import org.springframework.cloud.netflix.ribbon.RibbonClients;
