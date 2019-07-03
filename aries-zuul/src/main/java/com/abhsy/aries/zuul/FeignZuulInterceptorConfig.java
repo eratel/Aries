@@ -9,7 +9,7 @@ public class FeignZuulInterceptorConfig {
 
 
     @Bean
-    @ConditionalOnBean(RequestInterceptor.class)
+    @ConditionalOnBean(AriesRequestInterceptor.class)
     public RequestInterceptor headerInterceptor() {
         return new AriesRequestInterceptor();
     }
