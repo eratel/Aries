@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>aries-framework</artifactId>
+            <artifactId>aries-start</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
