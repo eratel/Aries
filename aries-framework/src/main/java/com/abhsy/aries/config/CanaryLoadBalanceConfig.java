@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @AutoConfigureBefore(RibbonClientConfiguration.class)
+@SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
 public class CanaryLoadBalanceConfig {
 
     @Bean

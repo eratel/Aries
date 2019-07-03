@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class CanaryZuulFilter extends ZuulFilter {
 
-    @Value("${eureka.metadataMap.canaryVersion:all}")
-    private String defaultVersion = null;
+    @Value("${eureka.metadataMap.strategyVersion:all}")
+    private String strategyVersion = null;
 
     @Override
     public boolean shouldFilter() {
@@ -20,7 +20,7 @@ public class CanaryZuulFilter extends ZuulFilter {
     public Object run() {
         String canryVersion = RequestContext.getCurrentContext().getRequest().getHeader(AriesConstant.TOKENHEADER);
         if (canryVersion == null) {
-            canryVersion = defaultVersion;
+            canryVersion = strategyVersion;
         }
         FeignInterceptorConfig.CONTEXT.set(canryVersion);
         return null;

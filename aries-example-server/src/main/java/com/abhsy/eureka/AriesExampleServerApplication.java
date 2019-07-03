@@ -2,13 +2,14 @@ package com.abhsy.eureka;
 
 import com.abhsy.aries.constant.AriesConstant;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringCloudApplication
+@SpringBootApplication
 @RestController
 public class AriesExampleServerApplication {
 
@@ -18,6 +19,7 @@ public class AriesExampleServerApplication {
 
     @RequestMapping("test")
     public String test(@RequestHeader(AriesConstant.TOKENHEADER)String name){
+        System.out.println(name);
         return name;
     }
 }

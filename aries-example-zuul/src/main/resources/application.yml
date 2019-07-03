@@ -3,7 +3,7 @@ spring:
     name: example-zuul
 
 server:
-  port: 8081
+  port: 9000
 eureka:
   client:
     serviceUrl:

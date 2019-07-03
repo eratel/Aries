@@ -1,4 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.abhsy.aries.config.EurekaAutoConfiguration,\
-com.abhsy.aries.config.CanaryLoadBalanceConfig,\
-com.abhsy.aries.config.FeignInterceptorConfig
+com.abhsy.aries.start.StrategyAutoConfiguration
