@@ -12,15 +12,6 @@ eureka:
     prefer-ip-address: true
 zuul:
   routes:
-    api-a:
-      path: /service/api-a/**
-      serviceId: hello-service-1
-    api-b:
-      path: /service/api-b/**
-      serviceId: feign-consumer
-    data-statistic:
-      path: /service/statistic/**
-      serviceId: data-statistic
-    experience-exchange:
-      path: /service/experience/**
-      serviceId: experience-exchange
+    server:
+      path: /aries/**
+      serviceId: example-server
