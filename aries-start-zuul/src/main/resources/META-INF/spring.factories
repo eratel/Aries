@@ -1,5 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.abhsy.aries.config.EurekaAutoConfiguration,\
 com.abhsy.aries.start.StrategyAutoConfiguration,\
-com.abhsy.aries.config.FeignInterceptorConfig,\
 com.abhsy.aries.zuul.FeignZuulInterceptorConfig

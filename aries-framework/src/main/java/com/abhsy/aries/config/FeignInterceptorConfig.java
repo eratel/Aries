@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@Configuration
 public class FeignInterceptorConfig implements WebMvcConfigurer {
 
     public static final TransmittableThreadLocal<String> CONTEXT = new TransmittableThreadLocal<>();

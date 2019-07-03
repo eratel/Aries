@@ -11,9 +11,11 @@ package com.abhsy.aries.config;
  */
 
 import com.abhsy.aries.constant.AriesConstant;
+import com.abhsy.aries.start.StrategyAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
-@Configuration
+@Import({FeignInterceptorConfig.class})
 public class EurekaAutoConfiguration {
     static {
         String logoShown = System.getProperty("aries.logo.shown", "true");
