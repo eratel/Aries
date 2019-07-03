@@ -12,7 +12,11 @@
 		<module>aries-framework</module>
 		<module>aries-start</module>
         <module>aries-zuul</module>
+        <module>aries-example-eureka</module>
+        <module>aries-example-server</module>
+        <module>aries-example-zuul</module>
     </modules>
+
     <packaging>pom</packaging>
     
     <properties>
