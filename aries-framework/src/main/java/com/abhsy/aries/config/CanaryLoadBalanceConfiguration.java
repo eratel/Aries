@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @AutoConfigureBefore(RibbonClientConfiguration.class)
 @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
-public class CanaryLoadBalanceConfig {
+public class CanaryLoadBalanceConfiguration {
 
     @Bean
     public IRule ribbonRule(IClientConfig config, ServerIntrospector serverIntrospector) {

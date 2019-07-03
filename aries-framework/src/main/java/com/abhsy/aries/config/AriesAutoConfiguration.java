@@ -4,7 +4,7 @@ package com.abhsy.aries.config;
 import com.abhsy.aries.constant.AriesConstant;
 import org.springframework.context.annotation.Import;
 
-@Import({FeignInterceptorConfig.class})
+@Import({FeignInterceptorConfiguration.class})
 public class AriesAutoConfiguration {
     static {
         String logoShown = System.getProperty("aries.logo.shown", "true");

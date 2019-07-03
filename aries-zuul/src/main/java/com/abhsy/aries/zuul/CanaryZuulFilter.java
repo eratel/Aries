@@ -1,6 +1,6 @@
 package com.abhsy.aries.zuul;
 
-import com.abhsy.aries.config.FeignInterceptorConfig;
+import com.abhsy.aries.config.FeignInterceptorConfiguration;
 import com.abhsy.aries.constant.AriesConstant;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -22,7 +22,7 @@ public class CanaryZuulFilter extends ZuulFilter {
         if (strategyVersion == null) {
             strategyVersion = strategyNowVersion;
         }
-        FeignInterceptorConfig.CONTEXT.set(strategyVersion);
+        FeignInterceptorConfiguration.CONTEXT.set(strategyVersion);
         return null;
     }
 

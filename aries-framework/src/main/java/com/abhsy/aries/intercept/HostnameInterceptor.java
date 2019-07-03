@@ -1,6 +1,6 @@
 package com.abhsy.aries.intercept;
 
-import com.abhsy.aries.config.FeignInterceptorConfig;
+import com.abhsy.aries.config.FeignInterceptorConfiguration;
 import com.abhsy.aries.constant.AriesConstant;
 import org.springframework.web.servlet.HandlerInterceptor;
 
@@ -18,7 +18,7 @@ public class HostnameInterceptor implements HandlerInterceptor {
             hostname = AriesConstant.ALLSERVER;
         }
         //存放到localhost中
-        FeignInterceptorConfig.CONTEXT.set(hostname);
+        FeignInterceptorConfiguration.CONTEXT.set(hostname);
         return true;
     }
 }

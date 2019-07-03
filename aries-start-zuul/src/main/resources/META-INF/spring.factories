@@ -1,4 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.abhsy.aries.config.AriesAutoConfiguration,\
-com.abhsy.aries.config.StrategyAutoConfiguration,\
+com.abhsy.aries.adapter.StrategyAutoConfiguration,\
 com.abhsy.aries.zuul.FeignZuulInterceptorConfig

@@ -1,6 +1,6 @@
 package com.abhsy.aries.zuul;
 
-import com.abhsy.aries.config.AriesRequestInterceptor;
+import com.abhsy.aries.intercept.AriesRequestInterceptor;
 import feign.RequestInterceptor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;

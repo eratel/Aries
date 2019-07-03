@@ -1,6 +1,6 @@
 package com.abhsy.aries.intercept;
 
-import com.abhsy.aries.config.FeignInterceptorConfig;
+import com.abhsy.aries.config.FeignInterceptorConfiguration;
 import com.abhsy.aries.constant.AriesConstant;
 import com.google.common.base.Optional;
 import com.netflix.loadbalancer.ILoadBalancer;
@@ -24,7 +24,7 @@ public class ZonAvoidanceWithMetadataRule extends ZoneAvoidanceRule {
     public Server choose(Object key) {
         ILoadBalancer lb = getLoadBalancer();
         List<Server> matchServers = new ArrayList<>();
-        String requestHostName = FeignInterceptorConfig.CONTEXT.get();
+        String requestHostName = FeignInterceptorConfiguration.CONTEXT.get();
         if (requestHostName.equals(AriesConstant.ALLSERVER)) {
             matchServers = lb.getAllServers();
         } else {
