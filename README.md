@@ -29,7 +29,7 @@ Aries 是一款超轻量级灰度框架，针对现有的SpringCloud微服务部
   - aries-example-server
   - aries-example-zuul
 
-##使用方式
+## 使用方式
 
 :warning:特别注意：网关与普通server引入jar不是同一个jar。需要进行区别~
 ```xml
@@ -48,6 +48,6 @@ Aries 是一款超轻量级灰度框架，针对现有的SpringCloud微服务部
 
 ```
 
-##关于我 
+## 关于我 
 - 更多消息请关注我的公众号
 ![Alt text](https://github.com/ABHSY/Aries/blob/master/doc/1.jpg)
