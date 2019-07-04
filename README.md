@@ -4,6 +4,24 @@
 [![Maven Central](https://img.shields.io/maven-central/v/com.nepxion/discovery.svg?label=maven%20central)](https://github.com/ABHSY/Aries)
 [![Javadocs](http://www.javadoc.io/badge/com.nepxion/discovery-plugin-framework.svg)](https://github.com/ABHSY/Aries)
 [![Build Status](https://travis-ci.org/Nepxion/Discovery.svg?branch=master)](https://github.com/ABHSY/Aries)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8e39a24e1be740c58b83fb81763ba317)](https://www.codacy.com/project/HaojunRen/Discovery/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nepxion/Discovery&amp;utm_campaign=Badge_Grade_Dashboard)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8e39a24e1be740c58b83fb81763ba317)](https://github.com/ABHSY/Aries)
 
-Aries 是一款超轻量级灰度框架，针对现有的Springcloud微服务部署痛点，解决多部署问题。可以让你在机器中单独启动一个服务，解决本机调试使用启动多个服务的痛苦。
+Aries 是一款超轻量级灰度框架，针对现有的SpringCloud微服务部署痛点，解决多部署问题。可以让你在机器中单独启动一个服务，解决本机调试使用启动多个服务的痛苦。
+
+## 解决的痛点
+- 作为一个开发人员，当你准备修复一个bug时，或者开发时。需要启动多个服务进行开发，前端联调服务巨卡。导致聊天效率低下。
+- 作为一个运维人员，测试环境被无意的注册，测试无法正常工作。
+- 作为一个测试人员，希望可以实现金丝雀测试，完成单个功能点测试，一个循序渐进过程。
+
+
+## 功能简介
+- Aries是在 Spring Cloud框架基础上，实现的微服务金丝雀发布框架。兼容 Spring Cloud Gateway和Zuul，下面说一下他的功能特性
+  - 具有极大的灵活性 - 易于在Aries进行二次开发
+  - 具有极简的易用性 - 只需要引入相关的包同时规则里含有了对应的配置，该功能将自然启动
+
+
+## 架构图
+![Alt text](https://github.com/ABHSY/Aries/tree/master/doc/doc.jpg)
+
+
+
