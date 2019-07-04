@@ -23,7 +23,7 @@ Aries 是一款超轻量级灰度框架，针对现有的SpringCloud微服务部
 ![Alt text](https://github.com/ABHSY/Aries/blob/master/doc/doc.jpg)
 
 
-### 规则示例
+## 规则示例
 - 下载源码查看及简示例
   - aries-example-eureka
   - aries-example-server
@@ -49,5 +49,5 @@ Aries 是一款超轻量级灰度框架，针对现有的SpringCloud微服务部
 ```
 
 ##关于我 
-- 更多消息请关注我的公众号，
+- 更多消息请关注我的公众号
 ![Alt text](https://github.com/ABHSY/Aries/blob/master/doc/1.jpg)
