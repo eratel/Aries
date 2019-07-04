@@ -21,7 +21,31 @@ Aries 是一款超轻量级灰度框架，针对现有的SpringCloud微服务部
 
 
 ## 架构图
-![Alt text](https://github.com/ABHSY/Aries/tree/master/doc/doc.jpg)
+![Alt text](https://github.com/ABHSY/Aries/blob/master/doc/doc.jpg)
 
+
+### 规则示例
+- 下载源码查看及简示例
+  - aries-example-eureka
+  - aries-example-server
+  - aries-example-zuul
+
+##使用方式
+:warning:特别注意：网关与普通server引入jar不是同一个jar。需要进行区别~
+```xml
+        <dependency>
+            <groupId>com.abhsy</groupId>
+            <artifactId>aries-zuul</artifactId>
+            <version>1.0</version>
+        </dependency>
+```
+```xml
+        <dependency>
+            <groupId>com.abhsy</groupId>
+            <artifactId>aries-start-server</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+```
 
 
