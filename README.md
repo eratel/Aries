@@ -1,5 +1,4 @@
 # ABHSY Aries
-[![Total lines](https://tokei.rs/b1/github/Nepxion/Discovery?category=lines)](https://github.com/ABHSY/Aries)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?label=license)](https://github.com/ABHSY/Aries)
 [![Maven Central](https://img.shields.io/maven-central/v/com.nepxion/discovery.svg?label=maven%20central)](https://github.com/ABHSY/Aries)
 [![Javadocs](http://www.javadoc.io/badge/com.nepxion/discovery-plugin-framework.svg)](https://github.com/ABHSY/Aries)
