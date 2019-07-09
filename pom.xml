@@ -29,6 +29,8 @@
         <spring.boot.version>2.0.7.RELEASE</spring.boot.version>
         <spring.cloud.version>Finchley.SR3</spring.cloud.version>
         <disruptor.version>3.3.7</disruptor.version>
+        <maven.test.skip>true</maven.test.skip>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
     </properties>
 
     <dependencyManagement>
@@ -129,6 +131,14 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
                         <version>1.6</version>
+<!--                        <executions>-->
+<!--                            <execution>-->
+<!--                                <phase>verify</phase>-->
+<!--                                <goals>-->
+<!--                                    <goal>sign</goal>-->
+<!--                                </goals>-->
+<!--                            </execution>-->
+<!--                        </executions>-->
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -169,13 +179,6 @@
                     <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
             </distributionManagement>
-            <modules>
-                <module>aries-common</module>
-                <module>aries-framework</module>
-                <module>aries-zuul</module>
-                <module>aries-start-zuul</module>
-                <module>aries-start-server</module>
-            </modules>
         </profile>
     </profiles>
 </project>
