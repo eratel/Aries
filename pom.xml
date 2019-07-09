@@ -68,9 +68,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/ABHSY/Aries</url>
-        <connection>scm:git:https://github.com/ABHSY/Aries.git</connection>
-        <developerConnection>scm:git:https://github.com/ABHSY/Aries.git</developerConnection>
+        <url>https://github.com/eratel/Aries</url>
+        <connection>scm:git:https://github.com/eratel/Aries.git</connection>
+        <developerConnection>scm:git:https://github.com/eratel/Aries.git</developerConnection>
         <tag>v${project.version}</tag>
     </scm>
 
@@ -78,7 +78,7 @@
         <developer>
             <name>JiKai Sun</name>
             <email>425359983@qq.com</email>
-            <url>https://github.com/ABHSY</url>
+            <url>https://github.com/eratel</url>
         </developer>
     </developers>
 </project>
