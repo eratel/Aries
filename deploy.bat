@@ -15,6 +15,6 @@
 @title Ratel Aries
 @color 0a
 
-call mvn clean deploy -DskipTests -e -P release -pl aries-common,aries-framework,aries-start-server,aries-start-zuul,aries-zuul -am
+call mvn clean deploy -DskipTests -e -P release -pl aries-start-server,aries-start-zuul -am -Dmaven.javadoc.skip=true
 
 pause
