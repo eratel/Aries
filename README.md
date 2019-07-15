@@ -77,7 +77,7 @@ eureka:
         <dependency>
             <groupId>com.github.eratel</groupId>
             <artifactId>aries-zuul</artifactId>
-            <version>1.0</version>
+            <version>1.0.0</version>
         </dependency>
 ```
 
@@ -85,7 +85,7 @@ eureka:
         <dependency>
             <groupId>com.github.eratel</groupId>
             <artifactId>aries-start-server</artifactId>
-            <version>1.0</version>
+            <version>1.0.0</version>
         </dependency>
 
 ```
