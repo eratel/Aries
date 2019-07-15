@@ -87,6 +87,9 @@ eureka:
         </dependency>
 
 ```
+## 关于开源
+- LICENSE 使用  Apache License Version 2.0, January 2004  
+- 二次开发，或开发新需求，拓展，请联系作者。在本开源基础上进行开发，烦请告知。
 
 ## 关于我 
 ### 更多消息请关注我的公众号
