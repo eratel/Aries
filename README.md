@@ -54,12 +54,13 @@ eureka:
 ![Alt text](https://github.com/ABHSY/Aries/blob/master/doc/2.jpg)
 
 
+## MVN 中央仓库 jar包查找
+![Alt text](https://github.com/ABHSY/Aries/blob/master/doc/3.jpg)
+
+
 ## 架构图
 ![Alt text](https://github.com/ABHSY/Aries/blob/master/doc/doc.jpg)
 
-
-## MVN 中央仓库 jar包查找
-![Alt text](https://github.com/ABHSY/Aries/blob/master/doc/3.jpg)
 
 ## 规则示例
 - 下载源码查看及简示例
