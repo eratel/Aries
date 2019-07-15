@@ -71,8 +71,8 @@ eureka:
 
 ## 使用方式
 
-:warning:特别注意：网关与普通server引入jar不是同一个jar。需要进行区别~
-:warning:特别注意：已经放入到MVN中央仓库  搜索com.github.eratel
+- :warning:特别注意：网关与普通server引入jar不是同一个jar。需要进行区别~
+- :warning:特别注意：已经放入到MVN中央仓库  搜索com.github.eratel
 ```xml
         <dependency>
             <groupId>com.github.eratel</groupId>
@@ -80,6 +80,7 @@ eureka:
             <version>1.0</version>
         </dependency>
 ```
+
 ```xml
         <dependency>
             <groupId>com.github.eratel</groupId>
