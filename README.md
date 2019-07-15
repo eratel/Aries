@@ -94,8 +94,9 @@ eureka:
 - 二次开发，或开发新需求，拓展，请联系作者。在本开源基础上进行开发，烦请告知。
 
 ## 关于我 
+### 添加我的微信发送暗号+群就可拉入微信群
+![Alt text](https://github.com/ABHSY/Aries/blob/master/doc/4.jpg)
+
 ### 更多消息请关注我的公众号 OR 添加我的微信发送暗号+群就可拉入微信群
 ![Alt text](https://github.com/ABHSY/Aries/blob/master/doc/1.jpg)
 
-### 添加我的微信发送暗号+群就可拉入微信群
-![Alt text](https://github.com/ABHSY/Aries/blob/master/doc/4.jpg)
